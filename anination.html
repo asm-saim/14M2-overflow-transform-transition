@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        @keyframes bounce {
+            0%{
+                top:0px;
+                left:0px;
+                
+            }
+            50%{
+                top:240px;
+                left: 160px;
+            }
+            75%{
+                top:0px;
+                left: 320px;
+            }
+            100%{
+                top:240px;
+                left: 440px;
+            }
+           
+        }
+              
+        /* @keyframes identifier {
+            from{
+                left: 0px;
+            }
+            to{
+                left: 440px;
+                background-color: rgb(247, 0, 255);
+            } 
+        } */
+
+        .box{
+            height: 300px;
+            width: 500px;
+            border: 2px solid green;
+            background-color: cornflowerblue;
+        }
+        .ball{
+            height: 60px;
+            width: 60px;
+            background-color: rgb(255, 217, 0);
+            border-radius: 50%;
+            position: relative;
+            /* animation: identifier 2s  ease-in-out 2s infinite alternate; */
+            animation: bounce 3s ease-in-out 2s infinite alternate ;
+        } 
+
+    </style>
+</head>
+<body>
+    <h1>Animation</h1>
+    <div class="box">
+        <div class="ball">
+
+        </div>
+    </div>
+</body>
+</html>

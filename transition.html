@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .box{
+            width: 150px;
+            height: 150px;
+            background-color: antiquewhite;
+            border: 1px solid red;
+            /* property name | duration | easing function | delay */
+            /* transition: width 5s linear 3s ; */
+            /* transition: background-color 3s ease-in 5s; */
+            transition: transform 3s linear 2s, background-color 3s linear 2s, width 3s linear 2s;
+
+        }
+        .box:hover{
+            /* transform: scale(1.5); */
+            transform: rotate(-45deg);
+            width: 400px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Transform: means change the current shape of an element.</li>
+        <li>Translate: Direction of the transform element</li>
+        <li>Transition: How long it will take to change the shape. I should be in class section, not in the hover section</li>
+    </ul>
+    <div class="box">Box-1</div>
+    <div class="box">Box-2</div>
+    <div class="box">Box-3</div>
+</body>
+</html>
